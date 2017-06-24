@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <meta charset="UTF-8">
   <title>SCRAPER</title>
   <style>
     body{
       background-color: none;
     }
+
+    .jumbotron {
+    	background-color: lightblue;
+    }
     #wrapper{
       width:960px;
       margin: 0 auto;
+      background: url(media-logos.jpg);
+      background-size:100%;
     }
     #articles{
       width:60%;
@@ -46,24 +53,31 @@
       color:white; 
       width:100%;
     }
-   h2, p {
+   h2 {
       color:red;
       font-size: 20px;
     }
-   h1{
+   h1 p{
       font-family: 'Yanone Kaffeesatz', bold;
       font-size: 75px;
       color: red;
       margin: 5px;
+      text-align: center;
     }
     #savenote {
       margin-top:20px;
     }
   </style>
 </head>
-<body background="asbury.jpg" style="background-size:100%">
+<body >
+  <div class="jumbotron">
+  	<div class ="container">
+  		<h1 class ="display-3">NEWSY SCRAPY</h1>
+  		<p class="lead">Your news directly from the web</p>
+  	</div>
+  </div>
   <div id="wrapper">
-    <h1>SCRAPee the LOCAL PAPee</h1>
+    
     <h2><i></i></h2>
     <div id="articles"></div>
     <div id="notes"></div>

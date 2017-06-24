@@ -19,7 +19,7 @@ app.use(express.static('public'));
 
 // Config mangoose db //
 
-mongoose.connect('mongodb://localhost/week18hw');
+mongoose.connect('mongodb://localhost/newsyscrapy');
 var db = mongoose.connection;
 
 db.on('error', function(err) {
